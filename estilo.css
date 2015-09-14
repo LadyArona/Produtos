@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #F2F2F2;
+    text-align: center;
+    font-family: Verdana;
+}
+
+#container{
+    width: 1024px;
+    margin:0 auto;           
+    text-align:left;
+}
+
+#logotipo{
+    width: 200px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+}
+
+#logotipo>img{
+    width: 100%;
+}
+
+#titulo{
+    width: 804px;
+    float: left;
+    padding: 50px 0 50px;
+    text-align: center;
+    background-color: #81BEF7;
+}
+
+#menu{
+    width: 220px;
+    float: left;
+}
+
+.titulo-menu{
+    padding: 5px 5px 5px 5px;
+    background-color: #81BEF7;
+    border: 2px solid #81BEF7;
+}
+
+.item-menu{
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border: 2px solid #81BEF7;
+}
+
+#conteudo {
+    width: 804px;
+    float: left;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.produto{
+    width: 191px;
+    height: 250px;
+    background-color: white;
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+.produto>img{
+    width: 100%;
+}
+
+.produto>p{
+    font-size: 0.7em;
+    padding-left: 2px;
+}
+
+#rodape{
+    width: 1024px;
+    height: 100px;
+    background-color: #81BEF7;
+    float: left;
+    text-align: center;
+}
