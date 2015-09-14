@@ -3,13 +3,13 @@
     include("menu-cadastros.php");
     include("conexao.php");
     
-    $sql = "select * from categorias;";
+    $sql      = "select * from categorias;";
     $resposta = mysql_query($sql);
     
-    $id = $_GET['id'];
+    $id  = mysql_real_escape_string(strip_tags($_GET['id']));
     $sql = "select * from produtos where id = $id";
     $resultado = mysql_query($sql);
-    $produto = mysql_fetch_assoc($resultado);
+    $produto   = mysql_fetch_assoc($resultado);
 ?>
 
 <div id="conteudo">

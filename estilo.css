@@ -5,7 +5,14 @@ body{
     text-align: center;
     font-family: Verdana;
 }
-
+a:link, a:visited, a:active {
+	text-decoration:none;
+        color: black
+	}
+a:hover {
+	text-decoration: underline; 
+	color: black;
+	}
 #container{
     width: 1024px;
     margin:0 auto;           
@@ -27,24 +34,25 @@ body{
     float: left;
     padding: 50px 0 50px;
     text-align: center;
-    background-color: #81BEF7;
+    background-color: #FFCC66;
 }
 
 #menu{
     width: 220px;
     float: left;
+    
 }
 
 .titulo-menu{
     padding: 5px 5px 5px 5px;
-    background-color: #81BEF7;
-    border: 2px solid #81BEF7;
+    background-color: #FFCC66;
+    border: 2px solid #FFCC66;
 }
 
 .item-menu{
     padding: 5px 5px 5px 5px;
     background-color: white;
-    border: 2px solid #81BEF7;
+    border: 2px solid #FFCC66;
 }
 
 #conteudo {
@@ -74,7 +82,7 @@ body{
 #rodape{
     width: 1024px;
     height: 100px;
-    background-color: #81BEF7;
+    background-color: #FF7519;
     float: left;
     text-align: center;
 }

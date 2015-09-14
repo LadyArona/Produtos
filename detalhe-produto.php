@@ -2,7 +2,7 @@
     include("cabecalho.php");
     include("menu.php");
     include("conexao.php");
-    $produto = $_GET['produto'];
+    $produto = mysql_real_escape_string(strip_tags($_GET['produto']));
     $sql =  "select * from produtos where id = $produto;";
     $resposta = mysql_query($sql) or die(mysql_error());
 ?>

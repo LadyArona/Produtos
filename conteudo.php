@@ -1,7 +1,7 @@
 <?php
     include("conexao.php");
     if (isset($_GET['categoria'])){
-        $categoria = $_GET['categoria'];
+        $categoria = mysql_real_escape_string(strip_tags($_GET['categoria']));
         $sql = "select * from produtos where id_categoria = $categoria;";
     }else{
         $sql = "select * from produtos;";  

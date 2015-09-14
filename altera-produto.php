@@ -7,14 +7,14 @@
         $resposta = move_uploaded_file($arquivo['tmp_name'], $destino);
         $imagem = $arquivo['name'];
     }else{
-        $imagem = $_POST['foto-atual'];
+        $imagem = mysql_real_escape_string(strip_tags($_POST['foto-atual']));
     }
     
-    $id = $_POST['id'];
-    $nome = $_POST['nome'];
-    $valor = $_POST['valor'];
-    $descricao = $_POST['descricao'];
-    $categoria= $_POST['categoria'];
+    $id         = mysql_real_escape_string(strip_tags($_POST['id']));
+    $nome       = mysql_real_escape_string(strip_tags($_POST['nome']));
+    $valor      = mysql_real_escape_string(strip_tags($_POST['valor']));
+    $descricao  = mysql_real_escape_string(strip_tags($_POST['descricao']));
+    $categoria  = mysql_real_escape_string(strip_tags($_POST['categoria']));
     
     $sql = "update produtos set nome = '$nome', valor = '$valor', descricao = '$descricao', imagem = '$imagem',
             id_categoria = $categoria where id = $id;";

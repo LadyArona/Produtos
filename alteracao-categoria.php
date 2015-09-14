@@ -3,8 +3,8 @@
     include("menu-cadastros.php");
     include("conexao.php");
     
-    $id = $_GET['id'];
-    $sql = "select * from categorias where id = $id";
+    $id        = mysql_real_escape_string(strip_tags($_GET['id']));
+    $sql       = "select * from categorias where id = $id";
     $resultado = mysql_query($sql);
     $categoria = mysql_fetch_assoc($resultado);
 ?>

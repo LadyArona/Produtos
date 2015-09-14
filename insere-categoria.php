@@ -1,8 +1,8 @@
 <?php
 	include("conexao.php");
 
-	$nome = $_POST['nome'];
-	$descricao = $_POST['descricao'];
+	$nome      = mysql_real_escape_string(strip_tags($_POST['nome']));
+	$descricao = mysql_real_escape_string(strip_tags($_POST['descricao']));
 
 	$sql = "insert into categorias (nome, descricao) values ('$nome', '$descricao');";
 	mysql_query($sql) or die (mysql_error());

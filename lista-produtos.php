@@ -4,7 +4,7 @@
     include("conexao.php");
 
     if (isset($_GET['busca'])){
-        $nome =$_GET['busca'];
+        $nome = mysql_real_escape_string(strip_tags($_GET['busca']));
         $sql = "SELECT * FROM PRODUTOS WHERE NOME LIKE '%$nome%'";
     }else{
         $sql = "SELECT * FROM PRODUTOS";    

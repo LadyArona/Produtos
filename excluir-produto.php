@@ -1,7 +1,7 @@
 <?php
 	include("conexao.php");
 
-	$id = $_GET['id'];
+	$id = mysql_real_escape_string(strip_tags($_GET['id']));
 
 	$sql = "delete from produtos where id = $id;";
 	mysql_query($sql) or die(mysql_error());
