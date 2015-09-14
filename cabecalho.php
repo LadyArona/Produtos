@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="windows-1252">
     <link rel="stylesheet" href="estilo.css">
     <title>Produtos - Loja Exemplo</title>
 </head>

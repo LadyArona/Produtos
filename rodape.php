@@ -1,5 +1,5 @@
 <div id="rodape">
-            <p>InformaÃ§Ãµes da Loja de Exemplo</p>
+            <p>Informações da Loja de Exemplo</p>
         </div>
     </div>
 </body>

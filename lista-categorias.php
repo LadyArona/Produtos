@@ -4,7 +4,7 @@
     include("conexao.php");
 
     if (isset($_GET['busca'])){
-        $nome =$_GET['busca'];
+        $nome = $_GET['busca'];
         $sql = "SELECT * FROM CATEGORIAS WHERE NOME LIKE '%$nome%'";
     }else{
         $sql = "SELECT * FROM CATEGORIAS";    
@@ -26,6 +26,8 @@
                 echo "<ul>";
                 echo "<li><b>Nome: ".$registro['nome']."</b></li>";
                 echo "<li>".$registro['descricao']."</li>";
+                echo "<a href='alteracao-categoria.php?id=".$registro['id']."'>Editar</a> ";
+                echo "<a href='excluir-categoria.php?id=".$registro['id']."'>Excluir</a>";
                 echo "</ul>";
             }
         ?>

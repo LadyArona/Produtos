@@ -13,7 +13,7 @@
 		<input type="text" name="nome">
 		<p><label for="">Valor:</label></p>
 		<input type="text" name="valor">	
-		<p><label for="">DescriÃ§Ã£o:</label></p>
+		<p><label for="">Descrição:</label></p>
 		<textarea name="descricao" cols="30" rows="10"></textarea>
 		<p><label for="">Foto</label></p>
 		<input type="file" name="foto">

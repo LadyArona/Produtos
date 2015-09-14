@@ -26,7 +26,9 @@
                 echo "<ul>";
                 echo "<li><b>Nome: ".$registro['nome']."</b></li>";
                 echo "<li>Valor: ".$registro['valor']."</li>";
-                echo "<li>Descrição: ".$registro['descricao']."</li>";
+                echo "<li>Descri�ao: ".$registro['descricao']."</li>";
+                echo "<a href='alteracao-produto.php?id=".$registro['id']."'>Editar</a> ";
+                echo "<a href='excluir-produto.php?id=".$registro['id']."'>Excluir</a>";
                 echo "</ul>";
             }
         ?>

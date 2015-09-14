@@ -9,7 +9,7 @@
 		<p><label for="">Nome Categoria:</label></p>
 		<input type="text" name="nome">
 
-		<p><label for="">DescriÃ§Ã£o:</label></p>
+		<p><label for="">Descrição:</label></p>
 		<textarea name="descricao" cols="30" rows="10"></textarea>
 		<p><input type="submit" value="salvar"></p>
 	</form>
