@@ -1,4 +1,5 @@
 <?php
+    include("verifica.php");
     include("cabecalho.php");
     include("menu-cadastros.php");
     include("conexao.php");
@@ -10,6 +11,8 @@
 ?>
 
 <div id="conteudo">
+    <p>Logado como <?php echo $_SESSION['nome']; ?></p>
+    <p><a href="sair.php">Sair</a></p>    
     <h2>Alterações de Categoria</h2>
     <form action="altera-categoria.php" method="POST">
         <p><label for="">Nome Categoria:</label></p>

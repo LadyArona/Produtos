@@ -1,4 +1,5 @@
 <?php
+    include("verifica.php");
     include("cabecalho.php");
     include("menu-cadastros.php");
     include("conexao.php");
@@ -14,6 +15,8 @@
 ?>
 
 <div id="conteudo">
+    <p>Logado como <?php echo $_SESSION['nome']; ?></p>
+    <p><a href="sair.php">Sair</a></p>    
     <h2>Listagem de Categorias</h2>
     <div id="listagem">
     <form action="lista-categorias.php" method="GET">

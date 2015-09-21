@@ -1,4 +1,5 @@
 <?php
+    include("verifica.php");
 	include("cabecalho.php");
 	include("menu-cadastros.php");
 	include("conexao.php");
@@ -7,6 +8,8 @@
 ?>
 
 <div id="conteudo">
+    <p>Logado como <?php echo $_SESSION['nome']; ?></p>
+    <p><a href="sair.php">Sair</a></p>
 	<h2>Cadastro de Produtos</h2>
 	<form action="insere-produtos.php" method="POST" enctype="multipart/form-data">
 		<p><label for="">Nome do Produto:</label></p>

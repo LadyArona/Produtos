@@ -11,5 +11,5 @@
             echo "<a href=index.php?categoria=" . $registro['id'] . "><div class='item-menu'>" . $registro['nome'] . "</div></a>";
         }
     ?>
-    <a href="cadastro-categorias.php"><div class="item-menu">Administração</div></a>
+    <a href="login.php"><div class="item-menu">Administração</div></a>
 </div>

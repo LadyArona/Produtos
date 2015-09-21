@@ -1,9 +1,12 @@
-<?php
-	include("cabecalho.php");
-	include("menu-cadastros.php");
+<?php   
+    include("verifica.php");
+    include("cabecalho.php");
+    include("menu-cadastros.php");
 ?>
 
 <div id="conteudo">
+    <p>Logado como <?php echo $_SESSION['nome']; ?></p>
+    <p><a href="sair.php">Sair</a></p>
 	<h2>Cadastro de Categorias</h2>
 	<form action="insere-categoria.php" method="POST">
 		<p><label for="">Nome Categoria:</label></p>
